@@ -1,0 +1,48 @@
+<!--
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="mijares.css">
+    </head>
+    <body>
+        
+                 <!-- wrapper for the page -->
+        
+         <div id="wrapper">
+        
+                                 <!-- There are no headers and footers  for this page -->
+                      <!-- content for the page -->
+             
+             <div class="inicio_de_session">
+               <img src="logo.png" alt="logo" width="80px" height="80px" >
+               <h2  class="inicio_de_session" style="font-family: Rajdhani;">CENTRO AUGUSTO MIJARES
+</h2>
+               <h3 style="font-family: Rajdhani;">Iniciar Sesion</h3>
+               </div>
+             <div class="inicio_de_session">
+                 <form method="post" action="login.php">
+                     
+                     
+                     <input type="email" placeholder="Nombre De Usuario Correo" name="email" size="25" style="font-family: Roboto" required>
+                     <input type="password" placeholder="Contrasena" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,10}" size="25" name="password" style="font-family: Roboto" required><br><br>
+<input type="radio" id="user" name="value" value="0">
+                <label for="User">User</label>
+                <input type="radio" id="team" name="value" value="1">
+                <label for="Team Member">Team Member</label><br>
+                   <input type="submit" name="submit" class="button" value="Entrar" style="font-family: Roboto">
+            </form> 
+                 </div>
+             
+
+</div> 
+      
+    </body>
+</html>

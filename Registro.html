@@ -1,0 +1,127 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="mijares.css">
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["username"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+ var u = document.forms["myForm"]["userid"].value;
+  if (x == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+ var p = document.forms["myForm"]["passid"].value;
+  if (p == "") {
+    alert("Password must be filled out");
+    return false;
+  }
+var p1 = document.forms["myForm"]["rpassid"].value;
+  if (p1 == "") {
+    alert("Retype the password");
+    return false;
+  }
+
+ var a = document.forms["myForm"]["address"].value;
+  if (x == "") {
+    alert("Address must be filled out");
+    return false;
+  }
+
+if(p==p1)
+{
+ return true;
+}
+else
+{
+ alert("Retype password must be same!");
+ return false;
+}
+
+
+
+
+
+}
+</script>
+    </head>
+    <body>
+        
+                 <!-- wrapper for the page -->
+        
+            <div id="wrapper">
+                
+                         <!-- header for the page -->
+                
+               <header class="header">    
+         <img src="logo.png" alt="logo">
+         
+             
+    <a href="Inicio.html"> Inicio</a>
+    <a href="Semblanza.html"> Semblanza</a>
+    <a href="CentroAugustoMijares.html"> Centro Augusto Mijraes</a>
+    <a href="Proyectos.html"> Proyectos</a>
+    <a href="Eventos.html"> Eventos</a>
+     <a href="http://cxk5454.uta.cloud/"> Blog</a>
+    <a href="Videos.html"> Videos</a>
+    <a href="Equipo.html"> Equipo</a>
+    <a href="IniciodeSession.html"> Inicio de Session</a>
+    <a href="Registro.html"> Registro</a>
+        
+            
+        </header>
+               <div class="Registro">
+               <img src="logo.png" alt="logo" width="80px" height="80px" >
+               <h2 class="Registro" style="font-family: Rajdhani">Registro
+</h2>
+               
+               </div>
+             <div class="Registro2">
+                <form method="post" action="signup.php" name="myForm" onSubmit="return validateForm()">
+               <input type="text" placeholder="Nombre" size="25" style="font-family: Roboto" name="username" required>
+               <input type="email" placeholder="Correo" size="25" style="font-family: Roboto" name="userid" required ><br><br>
+               <input type="password" placeholder="Contrasena" size="25" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,10}" style="font-family: Roboto"name="passid" >
+               <input type="password" placeholder="Repeter Contrasena" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,10}" size="25" style="font-family: Roboto" name="rpassid" ><br><br>
+               <input type="text" placeholder="Dieccion" size="57" style="font-family: Roboto" name="address" required><br><br>
+               <input type="radio" id="user" name="value" value="0">
+                <label for="User">User</label>
+                <input type="radio" id="team" name="value" value="1">
+                <label for="Team Member">Team Member</label><br>
+               
+               <br><br>
+   <input type="submit" class="button1" value="Guardar" name="submit" style="font-family: Roboto">
+         </form>
+                 </div>
+                   <div>
+                       <div class="Registro3">
+               <img src="logo.png" alt="logo" width="120px" height="120px" >
+               <h2  style="font-family: Rajdhani">CENTRO AUGUSTO MIJARES
+</h2>
+               </div>
+               </div>
+                
+                                  <!-- footer for the page -->
+                         
+        <footer class="footer videosfooter">
+             <p>_______________________________________________________________________________________________________________________________________________</p>
+             <p> Copyright &COPY; 2020 All rights reserved | This template is made with <a class="highlight">&hearts;</a> by <a class="highlight">DiazApps</a>  <a href="#" class="fa fa-facebook"></a> <a href="#" class="fa fa-twitter"></a>  <a href="#" class="fa fa-dribbble"></a>&Beta;&egrave;
+             </p>
+     </footer>
+            
+
+             
+    
+</div> 
+    </body>
+</html>
